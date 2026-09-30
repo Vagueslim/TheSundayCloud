@@ -34,7 +34,7 @@ function signalArt(route, compact = false) {
 function assetHero(route) {
   return `<a class="co-wcf-feature" href="${link(route, 'work-detail', 'smart-asset-sa-ai')}">
     <div class="co-wcf-feature__story"><span class="co-kicker">PEC SMART ASSET / PRODUCT DESIGN</span><h2>${text(route, 'Different assets. One clear workflow.', 'ทรัพย์สินต่างชนิด ในโฟลว์ที่เข้าใจได้')}</h2><p>${text(route, 'Initial specifications → UX/UI → engineering collaboration → feedback from use', 'สเปกเบื้องต้น → UX/UI → ทำงานร่วมกับวิศวกร → เรียนรู้จากการใช้งาน')}</p><span class="co-wcf-feature__evidence">${text(route, 'Category rules / reusable SKU / physical asset', 'กติกา Category / SKU ที่ใช้ซ้ำ / ทรัพย์สินจริง')}</span></div>
-    <div class="co-wcf-feature__screen"><img src="${asset(route, 'src/assets/images/work/smart-asset-sa-ai/cover-flow/sku.webp')}" alt="${text(route, 'Smart Asset SKU interface with category-specific fields', 'หน้าจอ SKU ใน Smart Asset พร้อมฟิลด์ตามประเภททรัพย์สิน')}" width="1440" height="735" loading="lazy"></div></a>`;
+    <div class="co-wcf-feature__screen"><img src="${asset(route, 'src/assets/images/work/smart-asset-sa-ai/cover-flow/site-management-overview.webp')}" alt="${text(route, 'Smart Asset workflow from product categories and SKUs to site assets and tracking', 'ภาพรวม workflow Smart Asset ตั้งแต่ประเภทสินค้าและ SKU ไปจนถึงทรัพย์สินหน้างานและการติดตาม')}" width="3000" height="2449" loading="lazy"></div></a>`;
 }
 
 function wcfSlider(route) {
