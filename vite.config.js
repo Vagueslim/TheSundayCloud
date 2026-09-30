@@ -4,7 +4,7 @@ import { routes } from "./src/data/routes.js";
 import { codaRoutes } from "./src/data/coda-routes.js";
 
 const input = Object.fromEntries(
-  [...routes, ...codaRoutes].map((route) => [route.key, resolve(import.meta.dirname, route.file)])
+  [...routes.filter(route => !codaRoutes.some(selected => selected.file === route.file)), ...codaRoutes].map((route) => [route.key, resolve(import.meta.dirname, route.file)])
 );
 
 export default defineConfig({

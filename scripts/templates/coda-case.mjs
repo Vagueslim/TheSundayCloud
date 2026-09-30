@@ -4,12 +4,13 @@ import { changeDate } from "../../src/data/change-date.js";
 import { changeDateStations } from "../../src/data/change-date-stations.js";
 import { renderCodaAssetFlow } from "./coda-asset-flow.mjs";
 import { findWork } from "../../src/data/work-items.js";
+import { codaRoutePath } from "../../src/data/coda-routes.js";
 
 const labels = {
   en: { work: "Work", role: "My contribution", context: "Context", year: "Year", status: "Project status", next: "Next case", all: "All three projects", evidence: "Project evidence", open: "Enlarge image", close: "Close image", original: "Open original image", decisions: "Design decisions", outcome: "What happened", learning: "What I learned", problem: "The problem", process: "The process", read: "Explore the decisions" },
   th: { work: "ผลงาน", role: "ส่วนที่ฉันรับผิดชอบ", context: "บริบท", year: "ปี", status: "สถานะโครงการ", next: "เคสถัดไป", all: "ดูทั้งสามโครงการ", evidence: "หลักฐานจากโครงการ", open: "ขยายภาพ", close: "ปิดภาพ", original: "เปิดภาพต้นฉบับ", decisions: "การตัดสินใจออกแบบ", outcome: "สิ่งที่เกิดขึ้น", learning: "สิ่งที่ได้เรียนรู้", problem: "ปัญหา", process: "กระบวนการ", read: "ดูการตัดสินใจ" }
 };
-const casePath = (locale, slug = "") => `${locale === "th" ? "/th" : ""}/coda/work/${slug ? `${slug}/` : ""}`;
+const casePath = (locale, slug = "") => codaRoutePath(locale, slug ? 'work-detail' : 'work-index', slug);
 const assetPath = (route, src) => relativeHref(route.path, `/${src.replace(/^\//, "")}`);
 
 function media(route, src, alt, caption, options = {}) {

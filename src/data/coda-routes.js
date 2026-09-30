@@ -5,7 +5,9 @@ import { codaProjects } from "./coda-projects.js";
 export const codaWorkSlugs = codaProjects.map((project) => project.slug);
 
 export function codaRoutePath(locale, page, slug = "") {
-  const prefix = locale === "th" ? "/th/coda" : "/coda";
+  const prefix = process.env.PORTFOLIO_DEPLOY === '1'
+    ? (locale === 'th' ? '/th' : '/en')
+    : (locale === "th" ? "/th/coda" : "/coda");
   if (page === "home") return `${prefix}/`;
   if (page === "about") return `${prefix}/about/`;
   if (page === "work-index") return `${prefix}/work/`;
