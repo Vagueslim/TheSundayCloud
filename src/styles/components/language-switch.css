@@ -1,0 +1,19 @@
+.c-language-switch {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  font-size: 0.68rem;
+  font-weight: 760;
+  transition:
+    color var(--duration-fast) ease,
+    background-color var(--duration-fast) ease;
+}
+
+.c-language-switch:hover,
+.c-language-switch:focus-visible {
+  color: var(--color-white);
+  background: var(--color-ink-strong);
+}

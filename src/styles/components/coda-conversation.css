@@ -1,0 +1,26 @@
+.co-conversation { padding-block: clamp(60px, 7vw, 112px); background: var(--co-paper); color: var(--co-ink); }
+.co-conversation__grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr); gap: clamp(32px, 7vw, 112px); border-top: 1px solid var(--co-line); padding-top: 36px; }
+.co-conversation h2 { margin: 24px 0 !important; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.35; letter-spacing: -.03em; }
+.co-conversation__intro { max-width: 32ch; font-size: 16px; line-height: 1.8; color: var(--co-muted); }
+.co-conversation__count { display: block; margin-top: 36px; font-size: 12px; letter-spacing: .1em; color: var(--co-accent); }
+.co-conversation details { border-bottom: 1px solid var(--co-line); }
+.co-conversation summary { list-style: none; display: grid; grid-template-columns: 28px minmax(0, 1fr) 24px; align-items: baseline; gap: 16px; padding: 25px 0; cursor: pointer; }
+.co-conversation summary::-webkit-details-marker { display: none; }
+.co-conversation summary:hover h3 { color: var(--co-accent); }
+.co-conversation summary:focus-visible { outline: 2px solid var(--co-accent); outline-offset: 5px; }
+.co-conversation summary h3 { font-size: clamp(18px, 1.6vw, 23px); font-weight: 400; line-height: 1.6; }
+.co-conversation__number { font-size: 12px; color: var(--co-muted); font-variant-numeric: tabular-nums; }
+.co-conversation__toggle::before { content: '+'; font-size: 24px; line-height: 1; }
+.co-conversation details[open] .co-conversation__toggle::before { content: '−'; }
+.co-conversation__answer { padding: 0 40px 30px 44px; font-size: 16px; line-height: 1.9; }
+.co-conversation__answer p + p { margin-top: 16px; }
+.co-conversation__quote { margin: clamp(64px, 8vw, 120px) 0 0; padding-top: 36px; border-top: 1px solid var(--co-line); max-width: 100%; }
+.co-conversation__quote > p:first-child { max-width: 27ch; font-size: clamp(30px, 4.5vw, 68px); line-height: 1.2; letter-spacing: -.035em; }
+.co-conversation__quote .co-conversation__translation { margin-top: 24px; font-size: 16px; line-height: 1.8; color: var(--co-muted); }
+.co-conversation__quote cite { display: block; margin-top: 24px; font-size: 12px; font-style: normal; }
+@media (max-width: 760px) {
+  .co-conversation__grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .co-conversation__count { margin-top: 20px; }
+  .co-conversation summary { gap: 10px; grid-template-columns: 22px minmax(0, 1fr) 20px; }
+  .co-conversation__answer { padding-left: 32px; padding-right: 0; }
+}

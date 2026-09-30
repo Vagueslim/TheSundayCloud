@@ -1,0 +1,33 @@
+html[lang="th"] body {
+  font-family: var(--font-thai);
+  line-height: 1.78;
+  letter-spacing: 0;
+}
+
+html[lang="th"] h1,
+html[lang="th"] h2,
+html[lang="th"] h3,
+html[lang="th"] p,
+html[lang="th"] a,
+html[lang="th"] button,
+html[lang="th"] span,
+html[lang="th"] li {
+  letter-spacing: 0;
+}
+
+html[lang="th"] h1,
+html[lang="th"] h2,
+html[lang="th"] h3 {
+  line-height: 1.26;
+}
+
+html[lang="th"] .u-uppercase,
+html[lang="th"] .c-section-heading__eyebrow,
+html[lang="th"] .p-work-detail__eyebrow {
+  text-transform: none;
+}
+
+html[lang="th"] .c-site-header__menu-button {
+  font-size: 0.78rem;
+  font-weight: 600;
+}

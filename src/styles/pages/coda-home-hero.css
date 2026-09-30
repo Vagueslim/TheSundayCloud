@@ -1,0 +1,24 @@
+/* Live HTML typography overlays the image; palette sampled from the supplied reference. */
+.co-collab-hero { --hero-accent:#c70136; --hero-paper:#ffffff; position:relative; isolation:isolate; width:100%; aspect-ratio:3/2; margin-inline:auto; background:var(--hero-paper); color:var(--hero-accent); container-type:inline-size; }
+.co-collab-hero__art { position:absolute; inset:0; margin:0; z-index:-2; }
+.co-collab-hero__art img { display:block; width:100%; height:100%; object-fit:contain; }
+.co-collab-hero::after { content:''; position:absolute; inset:0; z-index:-1; background:linear-gradient(to bottom,rgb(255 255 255 / 5%) 26%,rgb(255 255 255 / 55%) 48%,rgb(255 255 255 / 70%) 70%,rgb(255 255 255 / 12%) 100%); pointer-events:none; }
+.co-collab-hero__copy { position:absolute; left:4%; right:4%; top:40%; }
+.co-collab-hero__label { width:fit-content; margin:0 0 1.3cqw; padding:.35em .65em; background:var(--hero-paper); color:var(--hero-accent); font:600 clamp(12px,1.1cqw,18px)/1.5 Arial,sans-serif; letter-spacing:.035em; }
+.co-site .co-collab-hero__title { margin:0; font-family:'Arial Black',Arial,Helvetica,sans-serif; font-weight:900; letter-spacing:-.065em; line-height:1.02; color:var(--hero-accent); text-shadow:0 1px 16px rgb(255 255 255 / 35%); }
+.co-collab-hero__title > span { display:block; white-space:nowrap; }
+.co-collab-hero__name { font-size:10.7cqw; color:#000000; }
+.co-collab-hero__times { color:var(--hero-accent); }
+.co-collab-hero__partner { font-size:9.25cqw; color:var(--hero-accent); }
+.co-collab-hero__note { margin:1.8cqw 0 0; padding:.5em .7em; width:fit-content; max-width:66ch; background:rgb(255 255 255 / 94%); color:#72112e; font-size:clamp(13px,1.1cqw,18px); line-height:1.7; }
+.co-home-feature { padding-top:clamp(24px,3vw,50px); }
+@media (max-width:600px) {
+ .co-collab-hero { aspect-ratio:auto; min-height:calc(66.67vw + 90px); }
+ .co-collab-hero__art { bottom:auto; width:100%; aspect-ratio:3/2; }
+ .co-collab-hero::after { background:linear-gradient(to bottom,transparent 20%,rgb(255 255 255 / 52%) 37%,rgb(255 255 255 / 65%) 58%,var(--hero-paper) 78%); }
+ .co-collab-hero__copy { top:27cqw; left:5%; right:5%; }
+ .co-collab-hero__label { margin-bottom:8px; }
+ .co-collab-hero__note { margin-top:14px; max-width:42ch; }
+}
+
+

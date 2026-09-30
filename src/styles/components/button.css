@@ -1,0 +1,49 @@
+.c-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: clamp(13rem, 19vw, 17rem);
+  min-height: clamp(8rem, 11vw, 10rem);
+  padding: 1.25rem 2rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: var(--font-sm);
+  font-weight: 660;
+  text-align: center;
+  transition:
+    color var(--duration-fast) ease,
+    background-color var(--duration-fast) ease,
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.c-button:hover {
+  color: var(--color-white);
+  background: var(--color-ink-strong);
+  transform: translateY(-0.25rem);
+}
+
+.l-section--dark .c-button:hover {
+  color: var(--color-ink-strong);
+  background: var(--color-white);
+}
+
+.p-consultation .c-button:hover,
+.p-consultation .c-button:focus-visible {
+  color: var(--color-ink-strong);
+  background: var(--color-white);
+}
+
+.c-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-left: 1rem;
+  border-left: 1px solid currentColor;
+  font-size: var(--font-sm);
+  font-weight: 680;
+  transition: padding-left var(--duration-fast) var(--ease-out);
+}
+
+.c-text-link:hover {
+  padding-left: 1.5rem;
+}

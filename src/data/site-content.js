@@ -1,0 +1,162 @@
+export const site = {
+  brand: "dhittawat",
+  person: "Dhittawat Thongkhum",
+  role: {
+    en: "Senior Product Designer",
+    th: "Senior Product Designer"
+  },
+  focus: {
+    en: "Complex Operational Systems",
+    th: "การออกแบบระบบปฏิบัติการที่ซับซ้อน"
+  },
+  linkedin: "https://www.linkedin.com/in/dhittaawat-thongkhum-44bb94a7",
+  email: "",
+  nav: {
+    en: { home: "Home", about: "About", work: "Work", services: "Services", contact: "Contact", menu: "Menu", close: "Close" },
+    th: { home: "หน้าแรก", about: "เกี่ยวกับ", work: "ผลงาน", services: "บริการ", contact: "ติดต่อ", menu: "เมนู", close: "ปิด" }
+  },
+  common: {
+    en: {
+      skip: "Skip to content",
+      language: "TH",
+      languageLabel: "View this page in Thai",
+      selectedWork: "Selected work",
+      allWork: "View all work",
+      location: "Bangkok / Remote",
+      availability: "Available for hands-on product design and cross-functional collaboration.",
+      contactTitle: "Have a complex product that needs a clearer way forward?",
+      contactCopy: "Let’s talk about the system, the people using it, and what a useful next step could be.",
+      linkedin: "Connect on LinkedIn",
+      emailPending: "Email address coming soon",
+      copyright: "© 2026 Dhittawat Thongkhum",
+      previous: "Previous work",
+      next: "Next work",
+      backToWork: "Back to all work"
+    },
+    th: {
+      skip: "ข้ามไปยังเนื้อหา",
+      language: "EN",
+      languageLabel: "ดูหน้านี้เป็นภาษาอังกฤษ",
+      selectedWork: "ผลงานที่เลือก",
+      allWork: "ดูผลงานทั้งหมด",
+      location: "กรุงเทพฯ / ทำงานทางไกล",
+      availability: "พร้อมร่วมทีมออกแบบผลิตภัณฑ์และลงมือทำงานกับทีมพัฒนา",
+      contactTitle: "มีผลิตภัณฑ์ที่ซับซ้อนและต้องการทิศทางที่ชัดขึ้นหรือไม่",
+      contactCopy: "มาคุยกันเรื่องระบบ ผู้ใช้งาน และก้าวถัดไปที่นำไปใช้ได้จริง",
+      linkedin: "ติดต่อผ่าน LinkedIn",
+      emailPending: "กำลังเพิ่มที่อยู่อีเมล",
+      copyright: "© 2026 Dhittawat Thongkhum",
+      previous: "ผลงานก่อนหน้า",
+      next: "ผลงานถัดไป",
+      backToWork: "กลับไปดูผลงานทั้งหมด"
+    }
+  },
+  home: {
+    en: {
+      metaTitle: "Dhittawat Thongkhum — Senior Product Designer",
+      metaDescription: "Portfolio of Dhittawat Thongkhum, a product designer focused on complex operational systems.",
+      hero: "Users don't complain about UI.\nThey complain about waiting.",
+      heroNote: "Senior Product Designer\nBangkok / Remote",
+      quoteLead: "That’s why I look beneath the interface—to understand what actually makes users wait.",
+      quoteDetail: "Data models and systems analysis reveal the rules, states, and relationships behind the UI, so I can design a better way for people and systems to work together—without pushing the system’s burden back onto the user.",
+      workTitle: "Selected systems shaped around real operational decisions.",
+      workIntro: "Three selected cases: Smart Asset, Q-CHANG, and WCF Digital.",
+      servicesLabel: "Capabilities",
+      servicesTitle: "From ambiguous operations to a product system teams can build and run.",
+      servicesIntro: "I connect product intent with the operational detail needed to make a complex service usable.",
+      serviceGroups: [
+        { index: "01", title: "Research & system framing", copy: "Clarify actors, constraints, decisions, and the information that must move between them." },
+        { index: "02", title: "Workflow & information architecture", copy: "Turn service rules and edge cases into understandable flows, states, and navigation." },
+        { index: "03", title: "Product UX/UI", copy: "Design interfaces that help people see status, choose the next action, and recover from exceptions." },
+        { index: "04", title: "Design leadership", copy: "Align product, engineering, and stakeholders around a system that can evolve without losing clarity." }
+      ],
+      principleLabel: "Working principle",
+      principle: "Complexity should remain in the system—not in the user’s head.",
+      purposeLabel: "Purpose",
+      purpose: "Design operational products that stay understandable as the business grows.",
+      purposeCopy: "That means designing the visible interface and the invisible behavior behind it as one connected experience."
+    },
+    th: {
+      metaTitle: "Dhittawat Thongkhum — Senior Product Designer",
+      metaDescription: "พอร์ตโฟลิโอของ Dhittawat Thongkhum นักออกแบบผลิตภัณฑ์ที่เชี่ยวชาญระบบปฏิบัติการที่ซับซ้อน",
+      hero: "ผู้ใช้ไม่ได้บ่นเรื่อง UI\nพวกเขาบ่นว่าต้องรอ",
+      heroNote: "Senior Product Designer\nกรุงเทพฯ / ทำงานทางไกล",
+      quoteLead: "ผมจึงมองลึกกว่าหน้าจอ—เพื่อเข้าใจว่าอะไรทำให้ผู้ใช้ต้องรอจริง ๆ",
+      quoteDetail: "Data Model และ System Analysis ทำให้ผมเห็นกติกา สถานะ และความสัมพันธ์หลัง UI เพื่อออกแบบให้คนกับระบบทำงานร่วมกันได้ดีขึ้น โดยไม่ผลักภาระของระบบกลับไปให้ผู้ใช้",
+      workTitle: "ระบบที่คัดสรรและออกแบบจากการตัดสินใจในการทำงานจริง",
+      workIntro: "3 เคสที่เลือกมา: Smart Asset, Q-CHANG และ WCF Digital",
+      servicesLabel: "ความสามารถ",
+      servicesTitle: "จากกระบวนการที่ยังไม่ชัด สู่ระบบผลิตภัณฑ์ที่ทีมสร้างและนำไปใช้ต่อได้",
+      servicesIntro: "ผมเชื่อมเป้าหมายของผลิตภัณฑ์เข้ากับรายละเอียดเชิงปฏิบัติการ เพื่อทำให้บริการที่ซับซ้อนใช้งานได้จริง",
+      serviceGroups: [
+        { index: "01", title: "วิจัยและวางกรอบระบบ", copy: "ทำความเข้าใจผู้เกี่ยวข้อง ข้อจำกัด การตัดสินใจ และข้อมูลที่ต้องส่งต่อระหว่างกัน" },
+        { index: "02", title: "โฟลว์และสถาปัตยกรรมข้อมูล", copy: "เปลี่ยนกติกาและกรณียกเว้นให้เป็นโฟลว์ สถานะ และการนำทางที่เข้าใจง่าย" },
+        { index: "03", title: "Product UX/UI", copy: "ออกแบบหน้าจอให้ผู้ใช้เห็นสถานะ เลือกก้าวถัดไป และรับมือเมื่อเกิดข้อผิดพลาด" },
+        { index: "04", title: "Design Leadership", copy: "ทำให้ทีมผลิตภัณฑ์ วิศวกรรม และผู้มีส่วนได้ส่วนเสียเห็นระบบเดียวกันและพัฒนาต่อได้" }
+      ],
+      principleLabel: "หลักการทำงาน",
+      principle: "ความซับซ้อนควรอยู่ในระบบ ไม่ควรอยู่ในความจำของผู้ใช้",
+      purposeLabel: "เป้าหมาย",
+      purpose: "ออกแบบผลิตภัณฑ์ปฏิบัติการที่ยังคงเข้าใจง่ายเมื่อธุรกิจเติบโต",
+      purposeCopy: "นั่นหมายถึงการออกแบบทั้งอินเทอร์เฟซที่มองเห็น และพฤติกรรมเบื้องหลังให้เป็นประสบการณ์เดียวกัน"
+    }
+  },
+  about: {
+    en: {
+      metaTitle: "About — Dhittawat Thongkhum",
+      metaDescription: "Senior Product Designer Dhittawat Thongkhum’s career, selected systems, capabilities, and education.",
+      eyebrow: "About / Career",
+      nameLabel: "Name",
+      focusLabel: "Focus",
+      locationLabel: "Work preference",
+      languageLabel: "Languages",
+      experienceLabel: "Career experience",
+      experienceTitle: "Systems, projects, and responsibilities—year by year.",
+      projectLabel: "Selected projects",
+      businessLabel: "Business context",
+      flowLabel: "Workflow",
+      responsibilityLabel: "Responsibilities",
+      personalProjectLabel: "Personal Project",
+      personalProjectTitle: "Independent systems research.",
+      capabilityLabel: "Capabilities",
+      toolsLabel: "Tools & methods",
+      educationLabel: "Education",
+      gpaLabel: "GPA",
+      contactLabel: "Contact",
+      contactTitle: "For Senior Product Designer opportunities.",
+      copyEmail: "Copy email",
+      copiedEmail: "Email copied",
+      copyFailed: "Select and copy the email address",
+      linkedIn: "LinkedIn ↗",
+      temporaryPortrait: "Temporary portrait · replace before final deployment"
+    },
+    th: {
+      metaTitle: "เกี่ยวกับ — Dhittawat Thongkhum",
+      metaDescription: "ประสบการณ์ โปรเจกต์ ความสามารถ และการศึกษาของ Dhittawat Thongkhum, Senior Product Designer",
+      eyebrow: "เกี่ยวกับ / เส้นทางอาชีพ",
+      nameLabel: "ชื่อ",
+      focusLabel: "ความเชี่ยวชาญ",
+      locationLabel: "รูปแบบงาน",
+      languageLabel: "ภาษา",
+      experienceLabel: "ประสบการณ์ทำงาน",
+      experienceTitle: "ระบบ โปรเจกต์ และความรับผิดชอบ—เรียงตามปี",
+      projectLabel: "โปรเจกต์ที่เลือก",
+      businessLabel: "บริบทธุรกิจ",
+      flowLabel: "Workflow",
+      responsibilityLabel: "ความรับผิดชอบ",
+      personalProjectLabel: "โปรเจกต์ส่วนตัว",
+      personalProjectTitle: "งานวิจัยและระบบที่พัฒนาด้วยตนเอง",
+      capabilityLabel: "ความสามารถ",
+      toolsLabel: "เครื่องมือและวิธีทำงาน",
+      educationLabel: "การศึกษา",
+      gpaLabel: "เกรดเฉลี่ย",
+      contactLabel: "ติดต่อ",
+      contactTitle: "สำหรับโอกาสงาน Senior Product Designer",
+      copyEmail: "คัดลอกอีเมล",
+      copiedEmail: "คัดลอกอีเมลแล้ว",
+      copyFailed: "เลือกและคัดลอกอีเมล",
+      linkedIn: "LinkedIn ↗",
+      temporaryPortrait: "ภาพชั่วคราว · เปลี่ยนก่อน deploy เวอร์ชันจริง"
+    }
+  }
+};

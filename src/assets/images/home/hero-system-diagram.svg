@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 739 743" role="img" aria-labelledby="title description">
+  <title id="title">Technical UX and collaboration</title>
+  <desc id="description">Business, technology, design, and operations converge through technical UX and collaboration.</desc>
+  <style>
+    .grid-line {
+      stroke: #e5e5e2;
+      stroke-width: 1;
+    }
+
+    .system-line {
+      fill: none;
+      stroke: #747470;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-dasharray: 1.015;
+      stroke-dashoffset: 1.015;
+      vector-effect: non-scaling-stroke;
+      animation: draw-line 1.35s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+      animation-delay: var(--delay, 0s);
+    }
+
+    .system-copy {
+      opacity: 0;
+      animation: reveal-copy 0.65s ease-out forwards;
+      animation-delay: var(--delay, 1.8s);
+    }
+
+    .label {
+      fill: #3d3d3b;
+      font: 600 12px/1.2 Arial, Helvetica, sans-serif;
+      letter-spacing: 2.1px;
+      text-anchor: middle;
+    }
+
+    .detail {
+      fill: #60605d;
+      font: 400 10px/1.4 Arial, Helvetica, sans-serif;
+      text-anchor: middle;
+    }
+
+    .center-label {
+      fill: #3d3d3b;
+      font: 600 10px/1.25 Arial, Helvetica, sans-serif;
+      letter-spacing: 0.55px;
+      text-anchor: middle;
+    }
+
+    @keyframes draw-line {
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes reveal-copy {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .system-line,
+      .system-copy {
+        animation: none;
+        opacity: 1;
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <rect width="739" height="743" fill="#fdfdfc"/>
+  <circle cx="334" cy="371" r="331" fill="#fafaf8"/>
+
+  <g opacity="0.72" aria-hidden="true">
+    <path class="grid-line" d="M38 0v743M128 0v743M218 0v743M308 0v743M398 0v743M488 0v743M578 0v743M668 0v743"/>
+    <path class="grid-line" d="M0 101h739M0 191h739M0 281h739M0 371h739M0 461h739M0 551h739M0 641h739"/>
+  </g>
+
+  <g aria-hidden="true">
+    <circle class="system-line" pathLength="1" style="--delay: .05s" cx="334" cy="371" r="302"/>
+    <circle class="system-line" pathLength="1" style="--delay: .22s" cx="334" cy="371" r="279"/>
+    <circle class="system-line" pathLength="1" style="--delay: .48s" cx="334" cy="207" r="123"/>
+    <circle class="system-line" pathLength="1" style="--delay: .66s" cx="210" cy="371" r="123"/>
+    <circle class="system-line" pathLength="1" style="--delay: .84s" cx="458" cy="371" r="123"/>
+    <circle class="system-line" pathLength="1" style="--delay: 1.02s" cx="334" cy="535" r="123"/>
+  </g>
+
+  <circle class="system-core" cx="334" cy="371" r="67" fill="#fff"/>
+  <circle class="system-line" pathLength="1" style="--delay: 1.2s" cx="334" cy="371" r="68" aria-hidden="true"/>
+
+  <g class="system-copy" style="--delay: 1.55s">
+    <text class="label" x="334" y="191">BUSINESS</text>
+    <text class="detail" x="334" y="215">Value · Cost · Process · Revenue</text>
+  </g>
+
+  <g class="system-copy" style="--delay: 1.72s">
+    <text class="label" x="210" y="355">TECHNOLOGY</text>
+    <text class="detail" x="210" y="379">Constraints · Data ·</text>
+    <text class="detail" x="210" y="395">API · Backend</text>
+  </g>
+
+  <g class="system-copy" style="--delay: 1.89s">
+    <text class="label" x="458" y="355">DESIGN</text>
+    <text class="detail" x="458" y="379">Behavior · Usability ·</text>
+    <text class="detail" x="458" y="395">Clarity</text>
+  </g>
+
+  <g class="system-copy" style="--delay: 2.06s">
+    <text class="label" x="334" y="519">OPERATIONS</text>
+    <text class="detail" x="334" y="543">Roles · Workflow ·</text>
+    <text class="detail" x="334" y="559">Handoff · Exceptions</text>
+  </g>
+
+  <g class="system-copy" style="--delay: 2.24s">
+    <text class="center-label" x="334" y="366">TECHNICAL UX /</text>
+    <text class="center-label" x="334" y="382">COLLABORATION</text>
+  </g>
+</svg>

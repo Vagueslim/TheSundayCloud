@@ -1,0 +1,26 @@
+{
+  "name": "portfoliothree",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual portfolio for Dhittawat Thongkhum, built with Vanilla HTML, CSS, JavaScript, and Vite.",
+  "scripts": {
+    "generate:pages": "node scripts/generate-pages.mjs",
+    "predev": "npm run generate:pages",
+    "dev": "vite --configLoader runner --host 127.0.0.1",
+    "dev:open": "vite --configLoader runner --host 127.0.0.1 --port 4174 --open",
+    "prebuild": "npm run generate:pages",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner --host 127.0.0.1",
+    "test:smoke": "node --test --test-reporter=spec tests/*.test.mjs",
+    "test": "npm run build && npm run test:smoke",
+    "check": "npm test",
+    "prepare:deploy": "node scripts/prepare-deploy.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}

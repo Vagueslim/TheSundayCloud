@@ -1,0 +1,43 @@
+:root {
+  --color-ink: #3d3d3d;
+  --color-ink-strong: #141414;
+  --color-paper: #ffffff;
+  --color-white: #ffffff;
+  --color-muted: #77746f;
+  --color-line: rgb(61 61 61 / 12%);
+  --color-line-dark: rgb(255 255 255 / 18%);
+  --color-accent: #f16449;
+  --color-accent-blue: #123ec9;
+  --font-sans: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-thai: "IBM Plex Sans Thai", Tahoma, sans-serif;
+  --font-hand: "Mali", "IBM Plex Sans Thai", "Nunito Sans", sans-serif;
+  --page-gutter: clamp(1.25rem, 6.25vw, 5.625rem);
+  --header-gutter: clamp(1.25rem, 2.8vw, 2.5rem);
+  --header-height: 5.5rem;
+  --grid-columns: 16;
+  --space-1: clamp(0.5rem, 0.65vw, 0.75rem);
+  --space-2: clamp(0.875rem, 1.1vw, 1.25rem);
+  --space-3: clamp(1.25rem, 1.65vw, 2rem);
+  --space-4: clamp(2rem, 3vw, 3.5rem);
+  --space-5: clamp(3.5rem, 6vw, 7.5rem);
+  --space-6: clamp(6rem, 10vw, 12rem);
+  --font-xs: clamp(0.68rem, 0.63rem + 0.14vw, 0.78rem);
+  --font-sm: clamp(0.78rem, 0.72rem + 0.18vw, 0.94rem);
+  --font-body: clamp(0.95rem, 0.86rem + 0.24vw, 1.12rem);
+  --font-lead: clamp(1.35rem, 0.95rem + 1.15vw, 2.45rem);
+  --font-title: clamp(2.5rem, 1.1rem + 5.4vw, 7.9rem);
+  --font-display: clamp(8rem, 3rem + 24vw, 25rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 220ms;
+  --duration-slow: 850ms;
+}
+
+@media (max-width: 47.99rem) {
+  :root {
+    --page-gutter: 1.25rem;
+    --header-gutter: 1.25rem;
+    --header-height: 3.75rem;
+    --grid-columns: 6;
+    --space-6: 7rem;
+  }
+}

@@ -1,0 +1,28 @@
+.c-ambient-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.c-ambient-background::before {
+  position: absolute;
+  inset: -10%;
+  content: "";
+  background-image:
+    linear-gradient(rgb(18 62 201 / 22%), rgb(20 20 20 / 82%)),
+    url("../../assets/images/work/wcf-digital/hero-wide.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(22px) saturate(0.8);
+  opacity: 0.58;
+  transform: scale(1.15);
+  animation: ambient-shift 14s ease-in-out infinite alternate;
+}
+
+@keyframes ambient-shift {
+  to {
+    transform: scale(1.25) translate3d(-2%, 2%, 0);
+  }
+}
